@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use App\Pgmodules\Contracts\EloquentRepositoryInterface;
 use App\Pgmodules\Traits\DBtransactionHandler;
 
-class EloquentRepository implements EloquentRepositoryInterface {
+abstract class EloquentRepository implements EloquentRepositoryInterface {
     use DBtransactionHandler;
 
     public function __construct(public Model $model) {}
