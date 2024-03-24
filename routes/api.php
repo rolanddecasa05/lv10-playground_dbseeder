@@ -35,4 +35,5 @@ Route::resource('/users', UserRepositoryController::class);
 // event triggered email
 // redis queue listener
 // repository pattern and response handler
+// php artisan queue:work redis --tries=3
 // todo: json validator response, unit testing, file uploader, login and auth 

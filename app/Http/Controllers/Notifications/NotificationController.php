@@ -33,7 +33,7 @@ class NotificationController extends Controller
     }
 
     public function sendEmail(Request $request) {
-        Log::info('email controller');
+        //Log::info('email controller');
         $notif = new Notification;
 
         return $notif->sendEmail($request);

@@ -30,7 +30,7 @@ class NotificationEvent implements ShouldBroadcast
      */
     public function broadcastOn(): array
     {
-        Log::info("event");
+        //Log::info("event");
         return [
             new Channel('lv10_playground'),
         ];

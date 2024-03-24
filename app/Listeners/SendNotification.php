@@ -22,6 +22,6 @@ class SendNotification
      */
     public function handle(NotificationEvent $event): void
     {
-        Log::info($event->message.'-'.'from Listener-supervisor');
+        //Log::info($event->message.'-'.'from Listener-supervisor');
     }
 }

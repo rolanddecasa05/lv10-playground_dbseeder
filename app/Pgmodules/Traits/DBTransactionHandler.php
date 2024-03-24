@@ -9,12 +9,12 @@ trait DBtransactionHandler {
 
     public static function execute($query)
     {
-        Log::info('dbt');
+        //Log::info('dbt');
         DB::beginTransaction();
         try {
             $query;
             DB::commit();
-            Log::info($query);
+            //Log::info($query);
             return $query;
         } catch (\Throwable $th) {
             DB::rollBack();
